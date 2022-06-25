@@ -1,13 +1,8 @@
-import string
 import os
 import ads
 import scivibes
 import glob
 import json
-import cairo
-import copy
-import math
-import random
 import argparse
 
 
@@ -47,9 +42,6 @@ reddit2vibe = json.load(open("scivibes/reddit2vibe.txt"))
 
 #calculate Vibes
 tot_vibes = scivibes.total_vibe_check(new_wordlist, stop_terms, subreddits, reddit2vibe)
-
-# generate vibe plots
-scivibes.view_vibes(tot_vibes, args.filename)
 
 # a handy histogram of vibes
 fig, ax = scivibes.plot_vibestogram(tot_vibes)

@@ -1,6 +1,7 @@
 ads
 pandas
 werkzeug==1.0.1
-pycairo
+numpy
 jupyter
 ipykernel
+matplotlib
